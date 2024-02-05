@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Americano",
+    "description": "The Americano is another popular type of coffee drink, and its very easy to make! Its just espresso with hot water dripping over it. The name came about during World War II when European baristas added water to their espresso drinks for the American soldiers stationed there. The resulting drink had a smoother, less concentrated flavour than espresso and thus the Americano was born.",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508713/seco-app/coffee_assets/americano/square/dzexuhgnfuoutkuejwdt.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508723/seco-app/coffee_assets/americano/portrait/sqronjqkpptkvkh1mtcr.png",
+    "ingredients": "Milk",
+    "special_ingredient": "With Steamed Milk",
+    "prices": [
+      {"size": "S", "price": 1.38, "currency": "$"},
+      {"size": "M", "price": 3.15, "currency": "$"},
+      {"size": "L", "price": 4.29, "currency": "$"}
+    ],
+    "average_rating": 4.7,
+    "ratings_count": 6879,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 0
+  },
+  
+  {
+    "name": "Black Coffee",
+    "description": "Black coffee is arguably the most common type of coffee drink out there. Its popularity can be mainly attributed to how easy it is to make this beverage, be it drip, pour-over, French press, or anything else. Black coffee is usually served with no add-ins.",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508722/seco-app/coffee_assets/black_coffee/square/ajgzuj0mllyty9fbtjqv.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508719/seco-app/coffee_assets/black_coffee/portrait/q71gkvoxaur9kynvrn8m.png",
+    "ingredients": "Coffee Bean",
+    "special_ingredient": "",
+    "prices": [
+      {"size": "S", "price": 1.55, "currency": "$"},
+      {"size": "M", "price": 2.90, "currency": "$"},
+      {"size": "L", "price": 5.05, "currency": "$"}
+    ],
+    "average_rating": 4.9,
+    "ratings_count": 6500,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 1
+  },
+  {
+    "name": "Cappucchino",
+    "description": "Cappuccinos are a classic Italian type of coffee drink made of espresso, steamed milk, and thick foam in equal parts. The name comes from the resemblance to the hoods worn by Capuchin monks. Making cappuccino is relatively easy and can be done at home too if you know how to make espresso.",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508728/seco-app/coffee_assets/cappuccino/square/nu3tjhbfsntpfhamx4hp.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508716/seco-app/coffee_assets/cappuccino/portrait/sg3u7zrcbp3f94du4vu1.png",
+    "ingredients": "Milk",
+    "special_ingredient": "With Steamed Milk",
+    "prices": [
+      {"size": "S", "price": 1.45, "currency": "$"},
+      {"size": "M", "price": 3.30, "currency": "$"},
+      {"size": "L", "price": 4.65, "currency": "$"}
+    ],
+    "average_rating": 4.5,
+    "ratings_count": 5421,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 2
+  },
+  {
+    "name": "Espresso",
+    "description": "Espresso is made by forcing nearly boiling water through finely-ground coffee beans, which results in a concentrated, syrup-like coffee drink. This is the base for many Italian beverages in coffee shops. When compared to regular brewed coffee, espresso is much stronger than the other types of coffee drinks. Espressos are enjoyed in shots where a single shot is one ounce and a long single and double shot is two ounces in amount, respectively.",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508726/seco-app/coffee_assets/espresso/square/fakakfcamdoywkjq4dsk.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508742/seco-app/coffee_assets/espresso/portrait/x5yijrg1tafuwa7fotlz.png",
+    "ingredients": "Coffee Bean",
+    "special_ingredient": "",
+    "prices": [
+      {"size": "S", "price": 1.30, "currency": "$"},
+      {"size": "M", "price": 2.70, "currency": "$"},
+      {"size": "L", "price": 5.20, "currency": "$"}
+    ],
+    "average_rating": 4.7,
+    "ratings_count": 6555,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 3
+  },
+  {
+    "name": "Latte",
+    "description": "A latte is an espresso with steamed milk and a dollop of milk foam on top. This beverage is more prevalent in America than other coffee drinks like cappuccinos because it contains less foam, making it smoother and gentler for those with sensitive palettes. And if you want to spice up your latte, add some flavouring syrup. To make an iced version of this drink, simply pour espresso and steamed milk over ice cubes.",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508759/seco-app/coffee_assets/latte/square/csakhz0pd8qo0r5b5yxy.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508751/seco-app/coffee_assets/latte/portrait/g8gqm3nnv1k9xv0rilgg.png",
+    "ingredients": "Milk",
+    "special_ingredient": "With Steamed Milk",
+    "prices": [
+      {"size": "S", "price": 1.15, "currency": "$"},
+      {"size": "M", "price": 2.50, "currency": "$"},
+      {"size": "L", "price": 3.05, "currency": "$"}
+    ],
+    "average_rating": 4.2,
+    "ratings_count": 6439,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 4
+  },
+  {
+    "name": "Macchiato",
+    "description": "The word macchiato means spotted, so a macchiato espresso is an espresso with a splash of milk. Most coffee shops will top off this type of coffee drink with some foamed milk instead of just steamed milk for whats known as a traditional macchiato. ",
+    "roasted": "Medium Roasted",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508713/seco-app/coffee_assets/macchiato/square/qrtfpqnyplsrsfdubikr.png",
+    "imagelink_portrait": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1706508767/seco-app/coffee_assets/macchiato/portrait/opxg9rosk2bamkppd4u6.png",
+    "ingredients": "Milk",
+    "special_ingredient": "With Steamed Milk",
+    "prices": [
+      {"size": "S", "price": 1.45, "currency": "$"},
+      {"size": "M", "price": 3.20, "currency": "$"},
+      {"size": "L", "price": 4.50, "currency": "$"}
+    ],
+    "average_rating": 4.6,
+    "ratings_count": 2589,
+    "favourite": false,
+    "type": "Coffee",
+    "index": 5
+  }
+]
