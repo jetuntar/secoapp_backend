@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/config.js');
-const CoffeeItem = require('./coffeeItem.js');
+const MealItem = require('./mealItem.js');
 const User = require('./user.js');
 
 const Cart = sequelize.define('Cart', {
@@ -20,13 +20,13 @@ const Cart = sequelize.define('Cart', {
   quantity: {
     type: DataTypes.INTEGER,
     allowNull: false,
-  },
+  }
 }, {
   timestamps: false,
 });
 
 Cart.belongsTo(User, { foreignKey: 'userId' });
-Cart.belongsTo(CoffeeItem, { foreignKey: 'itemId' });
+Cart.belongsTo(MealItem, { foreignKey: 'itemId' });
 
 sequelize.sync()
   .then(() => {

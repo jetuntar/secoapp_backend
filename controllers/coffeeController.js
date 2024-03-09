@@ -49,6 +49,24 @@ module.exports = {
     }
   },
 
+  show_idx: async (req, res) => {
+    const {index} = req.params;
+    try {
+      const coffeeItem = await Coffee.findOne({where: {index:index}})
+      if (!coffeeItem) {
+        return res.status(404).json({
+          status: false,
+          message: "Data tidak ditemukan",
+        });
+      }
+  
+      res.json(coffeeItem);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({message: 'Server Error'});
+    }
+  },
+
 
   searchCoffee: async (req, res) => {
     try {

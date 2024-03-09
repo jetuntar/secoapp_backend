@@ -1,13 +1,18 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const midtransClient = require('midtrans-client')
 
-//const insertData = require('./scripts/insertData');
-const beanrouter = require('./routes/beanRoutes');
+// const insertData = require('./scripts/insertData');
 const coffeerouter = require('./routes/coffeeRoutes');
-const loginrouter = require('./routes/auth/loginRoutes')
+const mealrouter = require('./routes/mealRoutes')
+const loginrouter = require('./routes/auth/loginRoutes');
+const favrouter = require('./routes/favouriteRoutes');
+const addressrouter = require('./routes/addressRoutes');
+const orderrouter = require('./routes/orderRoutes');
+const promorouter = require('./routes/promoRoutes')
 const cloudinary = require('cloudinary');
-const CoffeeItem = require('./models/coffeeItem')
+const checkoutrouter = require('./routes/api/route')
 const cartrouter = require('./routes/cartRoutes')
 
 const app = express();
@@ -20,20 +25,29 @@ cloudinary.v2.config({
   secure: true,
 });
 
+
+const {Snap} = midtransClient;
+let snap = new Snap({
+  isProducion:false,
+  serverKey:'SB-Mid-server-NxDJMYT-daettKH3d_-1ky5r',
+  clientKey: 'SB-Mid-client-3gh4wNPXWZ-03SEx'
+})
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
-
-app.get('/api/coffee', async (req, res) => {
-  const coffeeItems = await CoffeeItem.findAll();
-  res.json(coffeeItems);
-});
+app.use('/checkout', checkoutrouter(snap));
 
 
-app.use(cartrouter);
-app.use(beanrouter);
-app.use(coffeerouter);
+
+// app.use(coffeerouter);
+app.use(mealrouter);
 app.use(loginrouter);
+app.use(favrouter);
+app.use(cartrouter);
+app.use(addressrouter);
+app.use(orderrouter);
+app.use(promorouter);
 //insertData;
 
 

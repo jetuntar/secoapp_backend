@@ -1,4 +1,3 @@
-const e = require('express')
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 const brcypt = require('bcryptjs')
@@ -8,7 +7,7 @@ const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi782
 module.exports = {
 
   register: async (req, res) => {
-    const { username, password, email } = req.body;
+    const { username, password, email, role } = req.body;
 
     try {
       const existingUser = await User.findOne({ where: { email: email } });
@@ -22,7 +21,8 @@ module.exports = {
         await User.create({
           username: username,
           password: encryptedPass,
-          email: email
+          email: email,
+          role: role
         });
 
         res.status(200).json({ status: "ok", data: "User Created" });
@@ -48,7 +48,7 @@ module.exports = {
       const token = jwt.sign({ email: existingUser.email }, JWT_SECRET, { expiresIn: '1d' });
   
       if (res.status(201)) {
-        return res.send({ status: "ok", token: token });
+        return res.send({ status: "ok", token: token, role: existingUser.role, userId: existingUser.id});
       } else {
         return res.send({ error: "error" });
       }
@@ -64,14 +64,13 @@ module.exports = {
       const email = user.email;
   
       User.findOne({where: { email: email }}).then((data) => {
-        return res.send({ status: "ok", data: data });
+        return res.send({ status: "ok", data: data.dataValues, role:data.dataValues.role});
       });
     } catch (error) {
       return res.send({status: 401});
     }
   },
 
-  
   //get all user
   index: async (req, res) => {
     try {

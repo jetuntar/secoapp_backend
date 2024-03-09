@@ -1,14 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
-const coffeecontroller = require('../controllers/cartController')
+const cartcontroller = require('../controllers/cartController')
 
-router.get('/api/cartItems/:userId', coffeecontroller.index)
+router.get('/api/user-cart-items/:userId', cartcontroller.index)
 
-router.post('/api/addToCart/:userId', coffeecontroller.addToCart)
+router.post('/api/add-to-cart/:userId', cartcontroller.addToCart)
 
-router.post('/api/removeItem', coffeecontroller.removeFromCart)
+router.post('/api/remove-items/:userId', cartcontroller.removeFromCart)
 
-router.put('/api/updateCart', coffeecontroller.updateItemCart)
+router.put('/api/increment-item-cart/:userId/:itemId', cartcontroller.incrementItemQuantity)
+
+router.put('/api/decrement-item-cart/:userId/:itemId', cartcontroller.decrementItemQuantity)
 
 module.exports = router

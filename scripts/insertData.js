@@ -1,12 +1,12 @@
-const BeanItem = require('../models/beanItem');
-const data = require('../bean.json');
+const Item = require('../models/mealItem');
+const data = require('../item.json');
 
 const insertData = async () => {
   try {
-    await BeanItem.sync({ force: true });
+    await Item.sync({ force: true });
     
-    for (const BeanItemData of data) {
-      await BeanItem.create(BeanItemData);
+    for (const ItemData of data) {
+      await Item.create(ItemData);
     }
 
     console.log('Data inserted successfully.');

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Nugget Ayam",
+    "description": "Nuggets are a processed product made from ground meat, added spices, molded, then coated with breadcrumbs on the surface and fried. The main ingredients for making nuggets usually come from chicken, beef or fish.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/m4fgvllvfbqooy5gmaa7.jpg",
+    "item_piece": "12 Pcs / Pack",
+    "price": 30000,
+    "type": "hc"
+  },
+  {
+    "name": "Sop Ayam Suwir",
+    "description": "Shreded Chicken Soup with a homie taste. The chewy and soft texture of shreded chicken makes this dish very suitable to be eaten at any time.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032687/seco-app/meal_image/i19wecgyyxk1njsfa0ky.jpg",
+    "item_piece": "500 g / Pack",
+    "price": 25000,
+    "type": "rf"
+  },
+  {
+    "name": "Telur Balado",
+    "description": "Boiled eggs cooked using Balado spices. Adds a spicy and savory taste so that it increases appetite.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032687/seco-app/meal_image/m9vlksob9yvszrpfjcha.jpg",
+    "item_piece": "8 Pcs / Pack",
+    "price": 22000,
+    "type": "hc"
+  },
+  {
+    "name": "Ikan Bumbu Kuning",
+    "description": "The fish that is previously marinated with various spices. The aim is that the spices are absorbed perfectly into the Fish.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032687/seco-app/meal_image/kutetw1mhe51g2lzpyhu.png",
+    "item_piece": "1 Kg / Pack",
+    "price": 70000,
+    "type": "hc"
+  },
+  {
+    "name": "Tumis Kangkung",
+    "description": "Stir-fried water spinach is a common Asian vegetable dish, known by various names in Asian languages. Water spinach is stir-fried with a variety of vegetables, spices, and sometimes meats.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032687/seco-app/meal_image/xutvzxdibv4luihv7ibh.jpg",
+    "item_piece": "500 g / Pack",
+    "price": 20000,
+    "type": "rf"
+  },
+  {
+    "name": "Sop Makaroni",
+    "description": "Macaroni soup is a soup preparation like in general, but uses macaroni as the main ingredient of the preparation. The chewy and soft texture of macaroni makes this dish very suitable to be eaten at any time.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032687/seco-app/meal_image/kblhfmbtweg7grdacxyv.jpg",
+    "item_piece": "500 g / Pack",
+    "price": 20000,
+    "type": "rf"
+  },
+  {
+    "name": "Sayur Lodeh",
+    "description": "Lodeh are a typical Indonesian food, especially Java. Uses coconut milk as the main ingredient. Not only white, lodeh have a variety of spices that make coconut milk yellow to reddish yellow.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/tzbo0fm0a2qsho6oap0z.jpg",
+    "item_piece": "500 g / Pack",
+    "price": 20000,
+    "type": "rf"
+  },
+  {
+    "name": "Sayur Asem",
+    "description": "Sayur asem is a vegetable menu containing local Indonesian vegetables. Cooked using typical Indonesian spices, namely tamarind",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/g5vyxnw73bae4ylk8swh.jpg",
+    "item_piece": "500 g / Pack",
+    "price": 20000,
+    "type": "rf"
+  },
+  {
+    "name": "Capcay",
+    "description": "Capcay is the name of a typical Chinese-Indonesian dish in the form of many kinds of vegetables cooked by boiling (gravy) or stir-frying. Capcai is originally a variation of a typical Fujian dish.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/spnpec1jg0e4xrckovhg.webp",
+    "item_piece": "500 g / Pack",
+    "price": 20000,
+    "type": "rf"
+  },
+  {
+    "name": "Ayam Ungkep",
+    "description": "The chicken that is previously boiled with various spices, using low heat. The aim is that the spices are absorbed perfectly into the chicken.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/xqufwbjvhlcsrlksscav.jpg",
+    "item_piece": "6 Pcs / Pack",
+    "price": 55000,
+    "type": "hc"
+  },
+  {
+    "name": "Dimsum",
+    "description": "Dimsum is a snack originating from China. Made from a mixture of chicken and shrimp, wrapped in thin and soft wonton skin.",
+    "imagelink_square": "https://res.cloudinary.com/dtiaqms2k/image/upload/v1709032686/seco-app/meal_image/v6dzrwb7spy90xl5lvzu.jpg",
+    "item_piece": "12 Pcs / Pack",
+    "price": 30000,
+    "type": "hc"
+  }
+]

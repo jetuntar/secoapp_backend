@@ -18,10 +18,13 @@ const User = sequelize.define('User', {
   email: {
     type: DataTypes.STRING,
     allowNull:false
+  },
+  role: {
+    type: DataTypes.STRING,
+    allowNull:false
   }
 }
 )
-
 
 sequelize.sync()
   .then(() => {
