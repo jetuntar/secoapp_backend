@@ -10,14 +10,14 @@ module.exports = {
             where: {
                 order_status: 'on-going'
             },
-            // include: [
-            //     {
-            //         model: Meal,
-            //     },
-            //     {
-            //         model: Address,
-            //     }
-            // ]
+            include: [
+                {
+                    model: Meal,
+                },
+                {
+                    model: Address,
+                }
+            ]
         });
 
         if (orders) {
@@ -33,7 +33,16 @@ module.exports = {
     try {
       const orders = await Order.findAll({where: {
         userId : req.params.userId
-      }})
+      },
+      include: [
+        {
+            model: Meal,
+        },
+        {
+            model: Address,
+        }
+        ]
+      })
 
       if (orders) {
         res.json(orders);

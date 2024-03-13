@@ -1,4 +1,5 @@
 const Fav = require('../models/favouriteItem');
+const Meal = require('../models/mealItem');
 
 module.exports = {
   index: async (req, res) => {
@@ -7,8 +8,13 @@ module.exports = {
     try {
       const items = await Fav.findAll({ where: {
         userId : userId
-      }})
-
+      },
+      include:[
+        {
+            model: Meal,
+        }
+      ]
+    })
       if (items) {
         res.json(items);
       } else {
